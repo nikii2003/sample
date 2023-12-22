@@ -25,7 +25,7 @@ app.get('/api/v2/products' , getApiProducts )
 
 app.delete('/api/v3/products/:_id',deleteApiProducts)
 
-if(process.env.NODE_ENV === "production"){
+if(process.env.NODE_ENV = "production"){
     app.use(express.static(path.join(__dirname, '..','client','build')));
 
     app.get('*',(req,res) =>{
